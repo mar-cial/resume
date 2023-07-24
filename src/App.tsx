@@ -1,4 +1,4 @@
-
+import { AiFillTwitterCircle, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 const Homepage = () => {
 	return (
 		<div className="bg-emeraldx-300 min-h-screen">
@@ -8,7 +8,7 @@ const Homepage = () => {
 				</div>
 				<div className="flex gap-2">
 					<a href="#experience">experience</a>
-					<a href="#projects">projects</a>
+					<a href="#projects">projects/ed</a>
 					<a href="#about">about</a>
 					<a href="#contact">contact</a>
 				</div>
@@ -28,7 +28,7 @@ const Homepage = () => {
 
 			<section className="relative z-0 h-[100vh] bg-amber-400" id="projects">
 				<div className="absolute right-0 bottom-0 p-4">
-					<h2 className="text-4xl font-semibold">projects</h2>
+					<h2 className="text-4xl font-semibold">projects/education</h2>
 				</div>
 			</section>
 
@@ -66,6 +66,14 @@ const Homepage = () => {
 			<section className="relative z-0 h-[100vh] bg-gossip-400" id="contact">
 				<div className="absolute right-0 bottom-0 p-4" >
 					<h2 className="text-4xl font-semibold">contact</h2>
+				</div>
+
+				<div className="flex justify-center items-center h-full">
+					<div className="flex gap-2 text-6xl">
+						<a href="https://twitter.com/marcialxx" target="_blank"><AiFillTwitterCircle /></a>
+						<a href="https://github.com/mar-cial" target="_blank"><AiFillGithub /></a>
+						<a href="https://www.linkedin.com/in/mar-cial/" target="_blank"><AiFillLinkedin /></a>
+					</div>
 				</div>
 			</section>
 		</div>
