@@ -6,6 +6,11 @@ export default {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				"display": ["Caprasimo", "serif"],
+				"body": ["Inter", "sans-serif"],
+				"code": ["'Azeret Mono'", "monospace"]
+			},
 			colors: {
 				'emeraldx': {
 					'50': '#edfcf2',
