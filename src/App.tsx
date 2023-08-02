@@ -1,11 +1,11 @@
 import { AiFillTwitterCircle, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { BiLinkExternal, BiLogoGoLang } from 'react-icons/bi'
-import { SiTailwindcss, SiNextdotjs, SiVite, SiReact } from 'react-icons/si'
-import { FaDocker } from 'react-icons/fa'
+import { SiTailwindcss, SiNextdotjs, SiReact } from 'react-icons/si'
+import { FaDocker, FaWordpressSimple } from 'react-icons/fa'
 
 const Homepage = () => {
 	return (
-		<div className="bg-emeraldx-300 min-h-screen font-body">
+		<div className="min-h-screen bg-emeraldx-300 font-body">
 			<nav className="sticky top-0 flex z-50 justify-between items-center p-4 h-[10vh]">
 				<div>
 					<a href="#top">home</a>
@@ -19,33 +19,33 @@ const Homepage = () => {
 			</nav>
 
 			<main className="p-4 flex-1 grow h-[90vh] flex flex-col justify-end">
-				<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold md:text-justify md:w-2/3 lg:w-3/4">
+				<h1 className="text-4xl font-bold md:text-5xl lg:text-6xl md:text-justify md:w-2/3 lg:w-3/4">
 					My name is Cesar and I can help you take your business to the next level.
 				</h1>
 			</main>
 
-			<section className="relative z-0 min-h-screen bg-red-500 text-white" id="experience">
-				<div className="absolute right-0 bottom-0 p-4">
+			<section className="relative z-0 min-h-screen text-white bg-red-500" id="experience">
+				<div className="absolute bottom-0 right-0 p-4">
 					<h2 className="text-4xl font-semibold" >experience</h2>
 				</div>
 
-				<div className="flex flex-col py-24 gap-12 px-6">
-					<div className="flex justify-center items-center flex-col">
-						<div className="w-full md:w-1/2 lg:w-1/3 flex flex-col gap-4">
-							<div className="flex justify-between items-center w-full">
-								<div className="flex gap-2 items-center font-semibold text-lg">
+				<div className="flex flex-col gap-12 px-6 py-24">
+					<div className="flex flex-col items-center justify-center">
+						<div className="flex flex-col w-full gap-4 md:w-1/2 lg:w-1/3">
+							<div className="flex items-center justify-between w-full">
+								<div className="flex items-center gap-2 text-lg font-semibold">
 									<a href="https://sumawealth.com/sumaapp" target="_blank" className="text-2xl">Suma Wealth</a>
 									<a href="https://sumawealth.com/sumaapp" target="_blank"><BiLinkExternal /></a>
 								</div>
 								<p>Jul 2022 - Feb 2023</p>
 							</div>
 							<div className="flex flex-col">
-								<p className="font-code text-sm">Role</p>
+								<p className="text-sm font-code">Role</p>
 								<p>Full stack JS developer</p>
 							</div>
 							<div className="flex flex-col">
-								<p className="font-code text-sm">Activities</p>
-								<ul className="list-disc pl-4">
+								<p className="text-sm font-code">Activities</p>
+								<ul className="pl-4 list-disc">
 									<li>
 										I wrote an API in node that received data generated from a fintech platform and relayed that info
 										to a user through push notifications. Users could receive their latest bank activity, tips and
@@ -63,22 +63,22 @@ const Homepage = () => {
 							</div>
 						</div>
 					</div>
-					<div className="flex justify-center items-center flex-col">
-						<div className="w-full md:w-1/2 lg:w-1/3 flex flex-col gap-4">
-							<div className="flex justify-between items-center w-full">
-								<div className="flex gap-2 items-center font-semibold text-lg">
+					<div className="flex flex-col items-center justify-center">
+						<div className="flex flex-col w-full gap-4 md:w-1/2 lg:w-1/3">
+							<div className="flex items-center justify-between w-full">
+								<div className="flex items-center gap-2 text-lg font-semibold">
 									<a href="https://www.ixaya.com/" target="_blank" className="text-2xl">Ixaya</a>
 									<a href="https://www.ixaya.com/" target="_blank"><BiLinkExternal /></a>
 								</div>
 								<p>Jan 2022 - Jun 2022</p>
 							</div>
 							<div className="flex flex-col">
-								<p className="font-code text-sm">Role</p>
+								<p className="text-sm font-code">Role</p>
 								<p>Front-end developer (React)</p>
 							</div>
 							<div className="flex flex-col">
-								<p className="font-code text-sm">Activities</p>
-								<ul className="list-disc pl-4">
+								<p className="text-sm font-code">Activities</p>
+								<ul className="pl-4 list-disc">
 									<li>
 										Built react app components with strict testing requirements to be implemented into US Air
 										Force flight documentation software.
@@ -97,11 +97,11 @@ const Homepage = () => {
 			</section>
 
 			<section className="relative z-0 min-h-screen bg-amber-400" id="projects">
-				<div className="absolute right-0 bottom-0 p-4">
+				<div className="absolute bottom-0 right-0 p-4">
 					<h2 className="text-4xl font-semibold">projects/education</h2>
 				</div>
 
-				<div className="py-24 px-6 md:p-12 lg:p-24 grid lg:grid-cols-3 gap-6 md:gap-12">
+				<div className="grid gap-6 px-6 py-24 md:p-12 lg:p-24 lg:grid-cols-3 md:gap-12">
 					<div className="flex flex-col gap-2">
 						<h3 className="text-xl font-medium">
 							Blinkr / a started CRUD RESTful API written in Go, running
@@ -112,7 +112,7 @@ const Homepage = () => {
 							three containers:
 
 						</p>
-						<ol className="list-decimal pl-8">
+						<ol className="pl-8 list-decimal">
 							<li>
 								<span className="font-semibold">UI: A NextJS 13 front end application.</span>
 
@@ -137,7 +137,7 @@ const Homepage = () => {
 
 						<div className="flex flex-col gap-2">
 							<div>
-								<h4 className="font-code text-sm">tech used</h4>
+								<h4 className="text-sm font-code">tech used</h4>
 							</div>
 
 							<div className="flex gap-2 text-3xl">
@@ -177,46 +177,41 @@ const Homepage = () => {
 
 						<div className="flex flex-col gap-2">
 							<div>
-								<h4 className="font-code text-sm">tech used</h4>
+								<h4 className="text-sm font-code">tech used</h4>
 							</div>
 
 							<div className="flex gap-2 text-3xl">
 								<SiNextdotjs />
 								<SiTailwindcss />
-
 							</div>
 						</div>
 					</div>
+
 					<div className="flex flex-col gap-2">
 						<h3 className="text-xl font-medium">
-							This resume! / Deployed to Azure using Static website
-							hosting with Azure Storage and Azure Functions
+							Freelance front end development
 						</h3>
 						<p>
-							This resume is stored in Azure Storage. It is a React app
-							bundled using <a href="https://vitejs.dev/"
-								className="font-medium underline" target="_blank">
-								Vite</a>.
+							I've done front end freelance projects throughout 3 years now.
+							My latest solo project was redesigning the <a className="font-bold hover:underline" href="https://cabrasportshq.com/" target="_blank">
+								CabraSportsHQ</a> site. A new, custom theme was implemented. I was also tasked with integrating
+							newsletter sign-up and a sweepstakes tournament page.
 						</p>
 						<p>
-							It also tracks how many times my resume has been
-							viewed! Currently there have been:
+							The tournament exceeced expectations, with
+							over <strong>1,000+ users</strong> entered to win a prize. Through the newsletter and sweepstakes
+							implementation, over <strong>1,400+ emails</strong> were collected in the span of 2 days.
 						</p>
-						<div className="flex rounded-md shadow-md py-4 justify-center items-center">
-							<p>0 visitors</p>
-						</div>
-
 
 						<div className="flex flex-col gap-2">
 							<div>
-								<h4 className="font-code text-sm">tech used</h4>
+								<h4 className="text-sm font-code">tech used</h4>
 							</div>
 
 							<div className="flex gap-2 text-3xl">
+								<FaWordpressSimple />
 								<SiReact />
-								<SiVite />
 								<SiTailwindcss />
-
 							</div>
 						</div>
 					</div>
@@ -224,13 +219,13 @@ const Homepage = () => {
 			</section>
 
 			<section className="relative z-0 min-h-screen bg-outrageous-orange-400" id="about">
-				<div className="absolute right-0 bottom-0 p-4">
+				<div className="absolute bottom-0 right-0 p-4">
 					<h2 className="text-4xl font-semibold">about me / education</h2>
 				</div>
 
-				<div className="flex justify-end items-end h-screen gap-12">
+				<div className="flex items-end justify-end h-screen gap-12">
 
-					<div className="p-4 pb-24 text-right md:w-1/3 flex flex-col gap-12">
+					<div className="flex flex-col gap-12 p-4 pb-24 text-right md:w-1/3">
 						<div className="flex flex-col gap-4">
 
 							<div className="flex flex-col">
@@ -279,11 +274,11 @@ const Homepage = () => {
 			</section>
 
 			<section className="relative z-0 h-[100vh] bg-gossip-400" id="contact">
-				<div className="absolute right-0 bottom-0 p-4" >
+				<div className="absolute bottom-0 right-0 p-4" >
 					<h2 className="text-4xl font-semibold">contact</h2>
 				</div>
 
-				<div className="flex justify-center items-center h-full">
+				<div className="flex items-center justify-center h-full">
 					<div className="flex gap-2 text-6xl">
 						<a href="https://twitter.com/marcialxx" target="_blank"><AiFillTwitterCircle /></a>
 						<a href="https://github.com/mar-cial" target="_blank"><AiFillGithub /></a>
